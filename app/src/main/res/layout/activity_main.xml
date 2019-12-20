@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Hello World" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press this"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorAccent"
+        android:background="#00FFFFFF"
+        android:layout_below="@+id/txt1"
+        android:shadowColor="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Don't "
+        android:layout_toRightOf="@id/btn1"
+        android:layout_below="@id/txt1"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#D6D6EE"
+        />
+    <Button
+        android:id="@+id/clearCanvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn2"
+        android:text="Clear Canvas"
+        android:padding="10dp"
+        android:layout_below="@id/txt1"/>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn2"/>
+    <com.lumen.mnsa_practice.CustomView
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/space1"
+        />
+
+</RelativeLayout>
