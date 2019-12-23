@@ -11,6 +11,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+import com.otaliastudios.zoom.ZoomLayout;
+
 public class TouchAppView extends View {
     private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private float x, y;
@@ -57,7 +59,7 @@ public class TouchAppView extends View {
                 if(drawingTouch)
                 {
                     drawingpic_x = (int)x-drawingPicOffset_x;
-                    drawingpic_y = (int)x-drawingPicOffset_y;
+                    drawingpic_y = (int)y-drawingPicOffset_y;
                 }
                 break;
             case MotionEvent.ACTION_UP:

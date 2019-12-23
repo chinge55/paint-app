@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     CustomView touchAppView;
-    Button btnClearCanvas, samplebtn;
+    Button btnClearCanvas, samplebtn, btnDon;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
